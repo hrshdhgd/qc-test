@@ -40,4 +40,4 @@ jobs:
       - uses: hrshdhgd/qc-action@main
         with:
           python-versions: ${{ matrix.python-version }}
-          tox: true
+          tox: false
