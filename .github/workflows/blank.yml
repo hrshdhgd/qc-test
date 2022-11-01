@@ -36,4 +36,4 @@ jobs:
           echo test, and deploy your project.
       - uses: hrshdhgd/qc-action@main
         with:
-          python-versions: ["3.9". "3.10"]
+          python-versions: 3.9. 3.10
