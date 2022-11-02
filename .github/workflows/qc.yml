@@ -41,3 +41,4 @@ jobs:
         with:
           python-versions: ${{ matrix.python-version }}
           use-tox: true
+          workflow-type: qc
