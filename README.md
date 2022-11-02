@@ -1,3 +1,3 @@
-# qc-test
+# Workflows-test
 
-Test for QC
+This is just a dummy repo to test the [`workflows`](https://github.com/hrshdhgd/workflows) GitHub Action project.
