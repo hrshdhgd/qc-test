@@ -2,6 +2,9 @@ name: Auto-deployment of Documentation
 on:
   push:
     branches: [ main ]
+
+env:
+  PROJECT_DIR: src/qc_test/
 jobs:
   build-docs:
     runs-on: ubuntu-latest
