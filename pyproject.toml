@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "wf-test"
 version = "0.1.0"
-description = "Test QC."
+description = "Test Workflows."
 authors = ["Harshad Hegde <hhegde@lbl.gov>"]
 readme = "README.md"
 packages = [{include = "src/wf_test"}]
