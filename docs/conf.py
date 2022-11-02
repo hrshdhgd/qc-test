@@ -7,14 +7,14 @@ import os
 import re
 import sys
 from datetime import date
-from ..tests import __version__
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'oakx-grape'
 copyright = 'f"{date.today().year}, Harshad Hegde <hhegde@lbl.gov>'
 author = 'Harshad Hegde <hhegde@lbl.gov>'
-release = __version__
+release = "0.1.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
