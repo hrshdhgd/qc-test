@@ -13,7 +13,7 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
       - name: Set env
-        run: echo "PROJECT_DIR=${{ github.workspace }}/src/qc_test" >> $GITHUB_ENV
+        run: echo "PROJECT_DIR=${{ github.workspace }}/src/qc_test/" >> $GITHUB_ENV
 
       - name: Call BBOP standard workflow
         uses: hrshdhgd/qc-action@main
