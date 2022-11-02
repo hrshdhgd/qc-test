@@ -24,6 +24,9 @@ docs = [
     "myst-parser",
     "furo"
     ]
+
+[tool.poetry-dynamic-versioning]
+enable = true
     
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
