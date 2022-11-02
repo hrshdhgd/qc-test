@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 
 env:
-  PROJECT_DIR: src/qc_test
+  PROJECT_DIR: ${{ github.workspace }}/src/qc_test
 jobs:
   build-docs:
     runs-on: ubuntu-latest
