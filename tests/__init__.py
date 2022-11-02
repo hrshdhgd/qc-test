@@ -4,7 +4,7 @@ try:
 except ImportError:
     # Python < 3.8
     import importlib_metadata as metadata  # pragma: no cover
-                
+
 try:
     __version__ = metadata.version(__name__)
 except metadata.PackageNotFoundError:
