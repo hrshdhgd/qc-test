@@ -11,10 +11,17 @@ jobs:
         with:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
-      - name: Call standard workflow
+      - name: Call BBOP standard workflow
         uses: hrshdhgd/qc-action@main
         with:
           python-versions: "3.9"
           use-tox: true
           workflow-type: docs
           token: ${{ secrets.GH_TOKEN }}
+
+      - name: VARIABLES.
+        run: |
+          echo ${{ github.action_path}}
+          echo ${{ github.workspace }}
+          echo ${{ github.path }}
+          echo ${{ github.env }}
