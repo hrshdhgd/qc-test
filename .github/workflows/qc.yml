@@ -37,7 +37,8 @@ jobs:
       #   run: |
       #     echo Add other actions to build,
       #     echo test, and deploy your project.
-      - uses: hrshdhgd/qc-action@main
+      - name: Call BBOP standard workflow
+        uses: hrshdhgd/qc-action@main
         with:
           python-versions: ${{ matrix.python-version }}
           use-tox: true

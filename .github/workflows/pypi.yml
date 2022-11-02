@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
 
       - name: Call BBOP standard workflow
         uses: hrshdhgd/qc-action@main
@@ -22,4 +22,3 @@ jobs:
           python-versions: "3.9"
           workflow-type: pypi
           token: ${{ secrets.PYPI_TOKEN }}
-     
