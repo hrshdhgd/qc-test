@@ -11,7 +11,7 @@ from datetime import date
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'oakx-grape'
+project = 'qc_test'
 copyright = 'f"{date.today().year}, Harshad Hegde <hhegde@lbl.gov>'
 author = 'Harshad Hegde <hhegde@lbl.gov>'
 release = "0.1.0"
