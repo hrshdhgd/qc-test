@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Test QC."
 authors = ["Harshad Hegde <hhegde@lbl.gov>"]
 readme = "README.md"
-packages = [{include = "qc_test"}]
+packages = [{include = "src/qc_test"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"

@@ -3,7 +3,7 @@
 
 def demo():
     """Define API."""
-    print("Hello, {{cookiecutter.greeting_recipient}}!")
+    print("Hello, World!!")
 
 
 if __name__ == "__main__":
