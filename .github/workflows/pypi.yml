@@ -1,25 +1,25 @@
-name: Auto-deployment of Documentation
-on:
-  push:
-    branches: [ main ]
+name: Publish Python Package
 
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+    
 jobs:
-  build-docs:
+  build-n-publish:
+    name: Build and publish Python 🐍 distributions 📦 to PyPI
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
-      - name: Set env
-        run: echo "PROJECT_DIR=${{ github.workspace }}/src/qc_test" >> $GITHUB_ENV
-
       - name: Call BBOP standard workflow
         uses: hrshdhgd/qc-action@main
         with:
           python-versions: "3.9"
-          workflow-type: docs
-          token: ${{ secrets.GH_TOKEN }}
-
-      
+          workflow-type: pypi
+          token: ${{ secrets.PYPI_TOKEN }}
+     
