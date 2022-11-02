@@ -1,4 +1,4 @@
-"""qc_test package."""
+"""wf_test package."""
 try:
     from importlib import metadata
 except ImportError:

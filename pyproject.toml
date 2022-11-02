@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "qc-test"
+name = "wf-test"
 version = "0.1.0"
 description = "Test QC."
 authors = ["Harshad Hegde <hhegde@lbl.gov>"]
 readme = "README.md"
-packages = [{include = "src/qc_test"}]
+packages = [{include = "src/wf_test"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
