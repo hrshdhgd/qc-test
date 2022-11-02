@@ -1,4 +1,4 @@
-qc_test
+wf_test
 =======
 
 .. toctree::
